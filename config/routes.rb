@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   root 'sessions#login'
   get '/users/new' => "users#new"
   get '/sessions/login' => "sessions#login"
   post '/sessions/login' => "sessions#create"
+=======
+  root 'session#login'
+  get '/session/login' => "session#login"
+  post '/session/login' => "session#create"
+>>>>>>> 201912afe5a7a1cac95c65d75d8b5b468a289291
 
   get '/welcome/show' => "welcome#show"
 
